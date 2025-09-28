@@ -1,16 +1,30 @@
-# Computational Theory Assessment
+# SHA-256 Hash Algorithm Implementation Assignment
 
-### Problem 1: Binary Words and Operations
-Implement certain functions in Python. Use numpy to ensure that all variables and values are treated as 32-bit integers. These functions are defined in the Secure Hash Standard.
+This repository contains solutions to five problems focusing on different aspects of the Secure Hash Standard (SHA-256), as specified in NIST FIPS 180-4.
 
-### Problem 2: Fractional Parts of Cube Roots
-Use numpy to calculate the constants listed at the bottom of page 11 of the Secure Hash Standard, following the given steps. These are the first 32 bits of the fractional parts of the cube roots of the first 64 prime numbers.
+## Problems Overview
 
-### Problem 3: Padding
-Write a generator function block_parse(msg) that processes messages according to section 5.1.1 and 5.2.1 of the Secure Hash Standard. The function should accept a bytes object called msg.
+1. **Binary Words and Operations** - Implementation of SHA-256 logical functions
+2. **Fractional Parts of Cube Roots** - Generation of SHA-256 constants from prime cube roots
+3. **Padding** - Message padding according to SHA-256 specification
+4. **Hashes** - Core SHA-256 hash computation function
+5. **Passwords** - Password cracking and security analysis
 
-### Problem 4: Hashes
-Write a function hash(current, block) that calculates the next hash value given the current hash value and the next message block according to section 6.2.2 SHA-256 Hash Computation on page 22 of the Secure Hash Standard.
+## Dependencies
 
-### Problem 5: Passwords
-Determine the passwords and explain how you found SHA-256 hashes of three common passwords that have been hashed using one pass of the SHA-256 algorithm.
+The implementation uses the following Python packages:
+- `numpy` - For 32-bit integer operations and mathematical computations
+- `jupyter` - For notebook environment
+- Standard library modules as needed
+
+## Running the Code
+
+All code is contained within `problems.ipynb`. Each problem is clearly marked with level 2 headings and can be run independently. The notebook is designed to be executed from top to bottom, with each cell building upon previous results where necessary.
+
+## Implementation Notes
+
+- All SHA-256 functions strictly follow NIST FIPS 180-4 specification
+- 32-bit integer operations are enforced using numpy data types
+- Code includes comprehensive docstrings and comments
+- Test cases verify correctness against known values
+- Password analysis demonstrates common cryptographic vulnerabilities
