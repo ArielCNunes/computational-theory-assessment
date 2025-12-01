@@ -1,4 +1,4 @@
-# SHA-256 Hash Algorithm Implementation Assignment
+# SHA-256 Hash Algorithm Implementation Assessment
 
 This repository contains solutions to five problems focusing on different aspects of the Secure Hash Standard (SHA-256), as specified in NIST FIPS 180-4.
 
@@ -10,21 +10,32 @@ This repository contains solutions to five problems focusing on different aspect
 4. **Hashes** - Core SHA-256 hash computation function
 5. **Passwords** - Password cracking and security analysis
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.12 or higher
+- Git
+
+### Setup
+
+1. Clone the repository:
+```bash
+   git clone https://github.com/ArielCNunes/computational-theory-assessment.git
+   cd computational-theory-assessment
+```
+
+2. Run the notebook:
+```bash
+   jupyter notebook problems.ipynb
+```
+
 ## Dependencies
 
-The implementation uses the following Python packages:
-- `numpy` - For 32-bit integer operations and mathematical computations
+- `numpy` - For 32-bit integer operations
 - `jupyter` - For notebook environment
-- Standard library modules as needed
 
-## Running the Code
+## References
 
-All code is contained within `problems.ipynb`. Each problem is clearly marked with level 2 headings and can be run independently. The notebook is designed to be executed from top to bottom, with each cell building upon previous results where necessary.
-
-## Implementation Notes
-
-- All SHA-256 functions strictly follow NIST FIPS 180-4 specification
-- 32-bit integer operations are enforced using numpy data types
-- Code includes comprehensive docstrings and comments
-- Test cases verify correctness against known values
-- Password analysis demonstrates common cryptographic vulnerabilities
+- [NIST FIPS 180-4 Secure Hash Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf)
+- Full references included in the notebook
